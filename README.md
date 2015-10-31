@@ -14,7 +14,7 @@ so the result string is a lower cased formated string.
 Using `go get`:
 
 ```
-go get -u github.com/WnP/sfmt
+go get -u github.com/WnP/go-sfmt
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ go get -u github.com/WnP/sfmt
 for all examples don't forget to import the package:
 
 ```go
-import "github.com/WnP/sfmt"
+import "github.com/WnP/go-sfmt"
 ```
 
 ### CamelCased
