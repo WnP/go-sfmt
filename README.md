@@ -2,7 +2,7 @@
 
 ## Description
 
-sfmt stands for string format, this package provided simple utilities to
+**sfmt** stands for string format, this package provided simple utilities to
 convert any supported string format -spaced|dashed|doted|underscored|camelcased- to
 any supperted string format -spaced|dashed|doted|underscored|camelcased.
 
@@ -44,14 +44,14 @@ res := smft.Dashed("The quick brown fox jumps over the lazy dog")
 ### Doted
 
 ```go
-res := smft.Dashed("The-quick-brown-fox-jumps-over-the-lazy-dog")
+res := smft.Doted("The-quick-brown-fox-jumps-over-the-lazy-dog")
 // res value is "the.quick.brown.fox.jumps.over.the.lazy.dog"
 ```
 
 ### Underscored
 
 ```go
-res := smft.Dashed("TheQuickBrownFoxJumpsOverTheLazyDog")
+res := smft.Underscored("TheQuickBrownFoxJumpsOverTheLazyDog")
 // res value is "the_quick_brown_fox_jumps_over_the_lazy_dog"
 ```
 
@@ -61,7 +61,7 @@ res := smft.Dashed("TheQuickBrownFoxJumpsOverTheLazyDog")
 could easely convert the first letter to upper case using `strings.Title`.
 
 ```go
-res := smft.Dashed("The_quick_brown_fox_jumps_over_the_lazy_dog")
+res := smft.CamelCased("The_quick_brown_fox_jumps_over_the_lazy_dog")
 // res value is "theQuickBrownFoxJumpsOverTheLazyDog"
 ```
 
