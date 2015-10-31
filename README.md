@@ -1,6 +1,7 @@
 # sfmt
 
 [![Build Status](https://travis-ci.org/WnP/go-sfmt.svg)](https://travis-ci.org/WnP/go-sfmt)
+[![Coverage Status](https://coveralls.io/repos/WnP/go-sfmt/badge.svg?branch=master)](https://coveralls.io/r/WnP/go-sfmt?branch=master)
 [![GoDoc](https://godoc.org/github.com/WnP/go-sfmt?status.svg)](https://godoc.org/github.com/WnP/go-sfmt)
 
 ## Description
