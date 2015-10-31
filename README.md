@@ -7,8 +7,15 @@
 ## Description
 
 **sfmt** stands for string format, this package provided simple utilities to
-convert any supported string format -spaced|dashed|doted|underscored|camelcased- to
-any supperted string format -spaced|dashed|doted|underscored|camelcased.
+convert any supported string format:
+
+- spaced
+- dashed
+- doted
+- underscored
+- camelcased
+
+to any supported string format -spaced|dashed|doted|underscored|camelcased.
 
 All string's characters are first convert to lower case before processing,
 so the result string is a lower cased formated string.
