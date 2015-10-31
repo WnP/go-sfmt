@@ -1,5 +1,7 @@
 # sfmt
 
+[![GoDoc](https://godoc.org/github.com/WnP/go-sfmt?status.svg)](https://godoc.org/github.com/WnP/go-sfmt)
+
 ## Description
 
 **sfmt** stands for string format, this package provided simple utilities to
