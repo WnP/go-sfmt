@@ -7,9 +7,7 @@ convert any supported string format -spaced|dashed|doted|underscored|camelcased-
 any supperted string format -spaced|dashed|doted|underscored|camelcased.
 
 All string's characters are first convert to lower case before processing,
-so the result string is a lower cased formated string, `CamelCased` return
-a string where the first character is lower cased, you could easily convert
-the first letter to upper case using [strings.Title](https://golang.org/pkg/strings/#Title).
+so the result string is a lower cased formated string.
 
 ## Install
 
@@ -27,43 +25,43 @@ for all examples don't forget to import the package:
 import sfmt
 ```
 
-### Spaced
-
-```go
-res := smft.Spaced("The.quick.brown.fox.jumps.over.the.lazy.dog")
-// res value is "the quick brown fox jumps over the lazy dog"
-```
-
-### Dashed
-
-```go
-res := smft.Dashed("The quick brown fox jumps over the lazy dog")
-// res value is "the-quick-brown-fox-jumps-over-the-lazy-dog"
-```
-
-### Doted
-
-```go
-res := smft.Doted("The-quick-brown-fox-jumps-over-the-lazy-dog")
-// res value is "the.quick.brown.fox.jumps.over.the.lazy.dog"
-```
-
-### Underscored
-
-```go
-res := smft.Underscored("TheQuickBrownFoxJumpsOverTheLazyDog")
-// res value is "the_quick_brown_fox_jumps_over_the_lazy_dog"
-```
-
-### Camelcased
+### CamelCased
 
 `CamelCased` return a string where the first character is lower cased, you
 could easily convert the first letter to upper case using
 [strings.Title](https://golang.org/pkg/strings/#Title).
 
 ```go
-res := smft.CamelCased("The_quick_brown_fox_jumps_over_the_lazy_dog")
-// res value is "theQuickBrownFoxJumpsOverTheLazyDog"
+fmt.Println(sfmt.CamelCased("The_quick_brown_fox_jumps_over_the_lazy_dog"))
+// Output: theQuickBrownFoxJumpsOverTheLazyDog
+```
+
+### Dashed
+
+```go
+fmt.Println(sfmt.Dashed("The quick brown fox jumps over the lazy dog"))
+// Output: the-quick-brown-fox-jumps-over-the-lazy-dog
+```
+
+### Doted
+
+```go
+fmt.Println(sfmt.Doted("The-quick-brown-fox-jumps-over-the-lazy-dog"))
+// Output: the.quick.brown.fox.jumps.over.the.lazy.dog
+```
+
+### Spaced
+
+```go
+fmt.Println(sfmt.Spaced("The.quick.brown.fox.jumps.over.the.lazy.dog"))
+// Output: the quick brown fox jumps over the lazy dog
+```
+
+### Underscored
+
+```go
+fmt.Println(sfmt.Underscored("TheQuickBrownFoxJumpsOverTheLazyDog"))
+// Output: the_quick_brown_fox_jumps_over_the_lazy_dog
 ```
 
 ## License (MIT)

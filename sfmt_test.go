@@ -5,12 +5,6 @@ import (
 	"testing"
 )
 
-func testEqual(t *testing.T, output string, expected string) {
-	if output != expected {
-		t.Errorf("found: %s\n       expected: %s", output, expected)
-	}
-}
-
 func testSliceEqual(t *testing.T, output []string, expected []string) {
 	if !reflect.DeepEqual(output, expected) {
 		t.Errorf("found: %s\n       expected: %s", output, expected)
@@ -31,24 +25,4 @@ func TestLowerSlice(t *testing.T) {
 		t,
 		lowerSlice([]string{"Some", "Uppercase", "Items"}),
 		[]string{"some", "uppercase", "items"})
-}
-
-func TestSpaced(t *testing.T) {
-	testEqual(t, Spaced("from.doted.format"), "from doted format")
-}
-
-func TestDoted(t *testing.T) {
-	testEqual(t, Doted("from spaced format"), "from.spaced.format")
-}
-
-func TestDashed(t *testing.T) {
-	testEqual(t, Dashed("from spaced format"), "from-spaced-format")
-}
-
-func TestUnderscored(t *testing.T) {
-	testEqual(t, Underscored("from spaced format"), "from_spaced_format")
-}
-
-func TestCamelCased(t *testing.T) {
-	testEqual(t, CamelCased("from spaced format"), "fromSpacedFormat")
 }

@@ -1,3 +1,9 @@
+// sfmt stands for string format, this package provided simple utilities to
+// convert any supported string format -spaced|dashed|doted|underscored|camelcased- to
+// any supperted string format -spaced|dashed|doted|underscored|camelcased.
+//
+// All string's characters are first convert to lower case before processing,
+// so the result string is a lower cased formated string.
 package sfmt
 
 import (
@@ -30,7 +36,7 @@ func getElements(input string) []string {
 	}
 }
 
-// Convert given string slice to lower string slice
+// Convert given string slice to lower string slice.
 func lowerSlice(input []string) []string {
 	var output []string
 	for _, v := range input {
@@ -39,32 +45,32 @@ func lowerSlice(input []string) []string {
 	return output
 }
 
-// Convert any string format to spaced format
-// all ouput letters are lowercase
+// Convert any string format to spaced format,
+// all ouput letters are lowercase.
 func Spaced(input string) string {
 	return strings.Join(lowerSlice(getElements(input)), " ")
 }
 
-// Convert any string format to dashed format
-// all ouput letters are lowercase
+// Convert any string format to dashed format,
+// all ouput letters are lowercase.
 func Dashed(input string) string {
 	return strings.Join(lowerSlice(getElements(input)), "-")
 }
 
-// Convert any string format to doted format
-// all ouput letters are lowercase
+// Convert any string format to doted format,
+// all ouput letters are lowercase.
 func Doted(input string) string {
 	return strings.Join(lowerSlice(getElements(input)), ".")
 }
 
-// Convert any string format to underscored format
-// all ouput letters are lowercase
+// Convert any string format to underscored format,
+// all ouput letters are lowercase.
 func Underscored(input string) string {
 	return strings.Join(lowerSlice(getElements(input)), "_")
 }
 
-// Convert any string format to underscored format
-// first letter is lowercase
+// Convert any string format to underscored format,
+// first letter is lowercase.
 func CamelCased(input string) string {
 	var output string
 	e := lowerSlice(getElements(input))
