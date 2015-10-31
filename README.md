@@ -1,5 +1,6 @@
 # sfmt
 
+[![Build Status](https://travis-ci.org/WnP/go-sfmt.svg)](https://travis-ci.org/WnP/go-sfmt)
 [![GoDoc](https://godoc.org/github.com/WnP/go-sfmt?status.svg)](https://godoc.org/github.com/WnP/go-sfmt)
 
 ## Description
