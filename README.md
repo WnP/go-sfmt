@@ -21,8 +21,8 @@ go get -u github.com/WnP/sfmt
 
 for all examples don't forget to import the package:
 
-```
-import sfmt
+```go
+import "github.com/WnP/sfmt"
 ```
 
 ### CamelCased
