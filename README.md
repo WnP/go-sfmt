@@ -8,7 +8,7 @@ any supperted string format -spaced|dashed|doted|underscored|camelcased.
 
 All string's characters are first convert to lower case before processing,
 so the result string is a lower cased formated string, `CamelCased` return
-a string where the first character is lower cased, you could easely convert
+a string where the first character is lower cased, you could easily convert
 the first letter to upper case using `strings.Title`.
 
 ## Install
@@ -58,7 +58,7 @@ res := smft.Underscored("TheQuickBrownFoxJumpsOverTheLazyDog")
 ### Camelcased
 
 `CamelCased` return a string where the first character is lower cased, you
-could easely convert the first letter to upper case using `strings.Title`.
+could easily convert the first letter to upper case using `strings.Title`.
 
 ```go
 res := smft.CamelCased("The_quick_brown_fox_jumps_over_the_lazy_dog")
