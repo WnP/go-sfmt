@@ -46,25 +46,25 @@ func lowerSlice(input []string) []string {
 }
 
 // Spaced convert any string format to spaced format,
-// all ouput letters are lowercase.
+// all output letters are lowercase.
 func Spaced(input string) string {
 	return strings.Join(lowerSlice(getElements(input)), " ")
 }
 
 // Dashed convert any string format to dashed format,
-// all ouput letters are lowercase.
+// all output letters are lowercase.
 func Dashed(input string) string {
 	return strings.Join(lowerSlice(getElements(input)), "-")
 }
 
 // Doted convert any string format to doted format,
-// all ouput letters are lowercase.
+// all output letters are lowercase.
 func Doted(input string) string {
 	return strings.Join(lowerSlice(getElements(input)), ".")
 }
 
 // Underscored convert any string format to underscored format,
-// all ouput letters are lowercase.
+// all output letters are lowercase.
 func Underscored(input string) string {
 	return strings.Join(lowerSlice(getElements(input)), "_")
 }
