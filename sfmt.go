@@ -1,4 +1,4 @@
-// sfmt stands for string format, this package provided simple utilities to
+// Package sfmt stands for string format, this package provided simple utilities to
 // convert any supported string format -spaced|dashed|doted|underscored|camelcased- to
 // any supperted string format -spaced|dashed|doted|underscored|camelcased.
 //
@@ -45,31 +45,31 @@ func lowerSlice(input []string) []string {
 	return output
 }
 
-// Convert any string format to spaced format,
+// Spaced convert any string format to spaced format,
 // all ouput letters are lowercase.
 func Spaced(input string) string {
 	return strings.Join(lowerSlice(getElements(input)), " ")
 }
 
-// Convert any string format to dashed format,
+// Dashed convert any string format to dashed format,
 // all ouput letters are lowercase.
 func Dashed(input string) string {
 	return strings.Join(lowerSlice(getElements(input)), "-")
 }
 
-// Convert any string format to doted format,
+// Doted convert any string format to doted format,
 // all ouput letters are lowercase.
 func Doted(input string) string {
 	return strings.Join(lowerSlice(getElements(input)), ".")
 }
 
-// Convert any string format to underscored format,
+// Underscored convert any string format to underscored format,
 // all ouput letters are lowercase.
 func Underscored(input string) string {
 	return strings.Join(lowerSlice(getElements(input)), "_")
 }
 
-// Convert any string format to underscored format,
+// CamelCased convert any string format to underscored format,
 // first letter is lowercase.
 func CamelCased(input string) string {
 	var output string
