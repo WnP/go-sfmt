@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/WnP/go-sfmt.svg)](https://travis-ci.org/WnP/go-sfmt)
 [![Coverage Status](https://coveralls.io/repos/WnP/go-sfmt/badge.svg?branch=master)](https://coveralls.io/r/WnP/go-sfmt?branch=master)
+[![Go Report Card](https://img.shields.io/badge/go_report-A+-brightgreen.svg)](https://goreportcard.com/report/github.com/WnP/go-sfmt)
 [![GoDoc](https://godoc.org/github.com/WnP/go-sfmt?status.svg)](https://godoc.org/github.com/WnP/go-sfmt)
 
 ## Description
